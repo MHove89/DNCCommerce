@@ -1,11 +1,13 @@
 ﻿using Commerce.Application;
+using Commerce.Domain.Entities;
 using MediatR;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Commerce.Framework.BuildingBlocks.Products.Commands.CreateProduct
 {
-    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, long>
+    public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, Guid>
     {
         private IApplicationDbContext _applicationDbContext;
 
@@ -14,11 +16,19 @@ namespace Commerce.Framework.BuildingBlocks.Products.Commands.CreateProduct
             _applicationDbContext = applicationDbContext;
         }
 
-        public async Task<long> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+        public async Task<Guid> Handle(CreateProductCommand request, CancellationToken cancellationToken)
         {
-            _applicationDbContext.Products.Add(new Domain.Entities.Product());
+            var product = new Product(){
+                 Description = request.Description,
+                 Title = request.Title,
+                 Feature = request.Feature,
+                 Price = request.Price
+            };
+            
+            _applicationDbContext.Products.Add(product);
             await _applicationDbContext.SaveChangesAsync(cancellationToken);
-            return 1000;
+            
+            return product.Id;
         }
     }
 }

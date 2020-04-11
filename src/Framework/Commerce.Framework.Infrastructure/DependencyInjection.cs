@@ -4,6 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Commerce.Application;
 using Commerce.Infrastructure.Data;
+using Microsoft.AspNetCore.Http;
+using Commerce.Framework.Application.Services;
+using Commerce.Framework.Infrastructure.Services;
 
 namespace Commerce.Infrastructure
 {
@@ -19,6 +22,8 @@ namespace Commerce.Infrastructure
             services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
+
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
             return services;
         }
     }
