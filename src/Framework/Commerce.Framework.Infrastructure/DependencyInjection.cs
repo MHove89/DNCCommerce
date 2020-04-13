@@ -18,7 +18,6 @@ namespace Commerce.Infrastructure
                  options.UseSqlServer(
                      configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
             services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();

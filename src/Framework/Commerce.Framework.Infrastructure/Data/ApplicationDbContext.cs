@@ -9,7 +9,7 @@ using Commerce.Framework.Application.Services;
 
 namespace Commerce.Infrastructure.Data
 {
-    public class ApplicationDbContext : IdentityDbContext, IApplicationDbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
 
         private readonly ICurrentUserService _currentUserService;
