@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BuildingBlocks\Commerce.Framework.BuildingBlocks.Products\Commerce.Framework.BuildingBlocks.Products.csproj" />
     <ProjectReference Include="..\Commerce.Framework.Application\Commerce.Application.csproj" />
   </ItemGroup>
 

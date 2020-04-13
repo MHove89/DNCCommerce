@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Commerce.Framework.Infrastructure.Repositories
+namespace Commerce.Application
 {
     public interface IRepository<TObject> where TObject : class
     {
@@ -17,10 +17,10 @@ namespace Commerce.Framework.Infrastructure.Repositories
         ICollection<TObject> FindAll(Expression<Func<TObject, bool>> match);
         Task<ICollection<TObject>> FindAllAsync(Expression<Func<TObject, bool>> match);
         Task<TObject> FindAsync(Expression<Func<TObject, bool>> match);
-        TObject Get(int id);
+        TObject Get(object id);
         ICollection<TObject> GetAll();
         Task<ICollection<TObject>> GetAllAsync();
-        Task<TObject> GetAsync(int id);
+        Task<TObject> GetAsync(object id);
         TObject Update(TObject updated, int key);
         Task<TObject> UpdateAsync(TObject updated, int key);
     }

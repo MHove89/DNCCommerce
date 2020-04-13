@@ -1,3 +1,4 @@
+using Commerce.Application;
 using Commerce.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -19,6 +20,7 @@ namespace Commerce.Framework.Infrastructure.Repositories
 
         public ICollection<TObject> GetAll()
         {
+
             return _context.Set<TObject>().ToList();
         }
 
@@ -27,12 +29,12 @@ namespace Commerce.Framework.Infrastructure.Repositories
             return await _context.Set<TObject>().ToListAsync();
         }
 
-        public TObject Get(int id)
+        public TObject Get(object id)
         {
             return _context.Set<TObject>().Find(id);
         }
 
-        public async Task<TObject> GetAsync(int id)
+        public async Task<TObject> GetAsync(object id)
         {
             return await _context.Set<TObject>().FindAsync(id);
         }

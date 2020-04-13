@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Commerce.Domain.Entities
 {
     public class OrderLine : BaseEntitiy

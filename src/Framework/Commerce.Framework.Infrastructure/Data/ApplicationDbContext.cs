@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Commerce.Domain.Entities;
-using Commerce.Application;
 using System.Threading;
 using System.Threading.Tasks;
 using System;
