@@ -2,9 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Commerce.Application;
 using Commerce.Infrastructure.Data;
-using Microsoft.AspNetCore.Http;
 using Commerce.Framework.Application.Services;
 using Commerce.Framework.Infrastructure.Services;
 
