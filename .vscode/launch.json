@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/Examples/Commerce.Web/bin/Debug/netcoreapp3.1/Commerce.Examples.Web.dll",
+            "program": "${workspaceFolder}/src/Examples/DNCommerce.Web/bin/Debug/netcoreapp3.1/DNCommerce.Examples.Web.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/Examples/Commerce.Web",
+            "cwd": "${workspaceFolder}/src/Examples/DNCommerce.Web",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
