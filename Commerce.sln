@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commerce.Framework.Building
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commerce.Framework.BuildingBocks", "src\Framework\BuildingBlocks\Commerce.Framework.BuildingBocks\Commerce.Framework.BuildingBocks.csproj", "{3C11520E-7C06-4538-A567-197F9DBE6CCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNCommerce", "DNCommerce\DNCommerce.csproj", "{203BCE3D-C20A-4CB3-920E-AB2AA6518D3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3C11520E-7C06-4538-A567-197F9DBE6CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C11520E-7C06-4538-A567-197F9DBE6CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C11520E-7C06-4538-A567-197F9DBE6CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203BCE3D-C20A-4CB3-920E-AB2AA6518D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203BCE3D-C20A-4CB3-920E-AB2AA6518D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203BCE3D-C20A-4CB3-920E-AB2AA6518D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203BCE3D-C20A-4CB3-920E-AB2AA6518D3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{1B703933-862E-4EEF-B3A7-FE69407B21CA} = {774FEA49-AA37-4A51-A469-F1EE06CE3B8D}
 		{D95FFB1F-1246-4D76-AA2F-0FAE32CF91D9} = {43790995-7A9F-4153-8036-BE8F89BDAD4D}
 		{3C11520E-7C06-4538-A567-197F9DBE6CCD} = {43790995-7A9F-4153-8036-BE8F89BDAD4D}
+		{203BCE3D-C20A-4CB3-920E-AB2AA6518D3B} = {090C6533-621D-43E1-B5DD-518C61524F15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BAB1E249-DEB4-491D-A129-7671FBCCB607}

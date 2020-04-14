@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Framework\Commerce.Framework.Application\Commerce.Application.csproj" />
-    <ProjectReference Include="..\..\Framework\Commerce.Framework.Infrastructure\Commerce.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\DNCommerce\DNCommerce.csproj" />
   </ItemGroup>
 
 </Project>
