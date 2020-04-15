@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{774FEA49-AA37-4A51-A469-F1EE06CE3B8D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Framework.BuildingBlocks.Products", "src\Framework\BuildingBlocks\DNCommerce.Framework.BuildingBlocks.Products\DNCommerce.Framework.BuildingBlocks.Products.csproj", "{A64FD78B-B1D7-420D-ACDD-BC56C43DDB5A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Framework.BuildingBocks", "src\Framework\BuildingBlocks\DNCommerce.Framework.BuildingBocks\DNCommerce.Framework.BuildingBocks.csproj", "{153CD4A1-176E-4C8D-9038-D1C725696E53}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce", "src\Framework\DNCommerce\DNCommerce.csproj", "{0368C07A-B5D5-4279-AD84-BFD179C8E9D8}"
@@ -23,16 +21,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Infrastructure",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Examples.Web", "src\Examples\DNCommerce.Web\DNCommerce.Examples.Web.csproj", "{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Framework.BuildingBlocks.Catalog", "src\Framework\BuildingBlocks\DNCommerce.Framework.BuildingBlocks.Catalog\DNCommerce.Framework.BuildingBlocks.Catalog.csproj", "{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A64FD78B-B1D7-420D-ACDD-BC56C43DDB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A64FD78B-B1D7-420D-ACDD-BC56C43DDB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A64FD78B-B1D7-420D-ACDD-BC56C43DDB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A64FD78B-B1D7-420D-ACDD-BC56C43DDB5A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{153CD4A1-176E-4C8D-9038-D1C725696E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{153CD4A1-176E-4C8D-9038-D1C725696E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{153CD4A1-176E-4C8D-9038-D1C725696E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,19 +53,23 @@ Global
 		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{43790995-7A9F-4153-8036-BE8F89BDAD4D} = {090C6533-621D-43E1-B5DD-518C61524F15}
-		{A64FD78B-B1D7-420D-ACDD-BC56C43DDB5A} = {43790995-7A9F-4153-8036-BE8F89BDAD4D}
 		{153CD4A1-176E-4C8D-9038-D1C725696E53} = {43790995-7A9F-4153-8036-BE8F89BDAD4D}
 		{0368C07A-B5D5-4279-AD84-BFD179C8E9D8} = {090C6533-621D-43E1-B5DD-518C61524F15}
 		{88788461-21E9-4D84-83F5-4D0AE2D32EED} = {090C6533-621D-43E1-B5DD-518C61524F15}
 		{2CD10F25-23CF-492E-A6EC-30C4A0525ABD} = {090C6533-621D-43E1-B5DD-518C61524F15}
 		{A45B9F45-74B3-4B1B-83ED-6605FE00A4F6} = {090C6533-621D-43E1-B5DD-518C61524F15}
 		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E} = {774FEA49-AA37-4A51-A469-F1EE06CE3B8D}
+		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435} = {43790995-7A9F-4153-8036-BE8F89BDAD4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BAB1E249-DEB4-491D-A129-7671FBCCB607}

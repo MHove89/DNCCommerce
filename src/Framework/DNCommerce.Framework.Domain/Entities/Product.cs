@@ -5,6 +5,7 @@ namespace DNCommerce.Domain.Entities
 {
     public class Product : BaseEntitiy
     {
+     
         private ICollection<ProductCategory> _productCategories;
      
         private ICollection<ProductImage> _productImages;

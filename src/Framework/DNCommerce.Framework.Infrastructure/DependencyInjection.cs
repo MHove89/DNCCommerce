@@ -5,8 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using DNCommerce.Infrastructure.Data;
 using DNCommerce.Framework.Application.Services;
 using DNCommerce.Framework.Infrastructure.Services;
-using DNCommerce.Application;
-using DNCommerce.Framework.Infrastructure.Repositories;
+using DNCommerce.Application.Repositories;
+using DNCommerce.Infrastructure.Repositories;
 
 namespace DNCommerce.Infrastructure
 {
@@ -22,8 +22,8 @@ namespace DNCommerce.Infrastructure
                     .AddEntityFrameworkStores<ApplicationDbContext>()
                     .AddDefaultTokenProviders();
 
-            services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
             services.AddScoped<ICurrentUserService, CurrentUserService>();
+            services.AddScoped<IProductRepository, ProductRepository>();
 
             return services;
         }

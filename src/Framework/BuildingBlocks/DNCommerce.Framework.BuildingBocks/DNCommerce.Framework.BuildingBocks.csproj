@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DNCommerce.Framework.BuildingBlocks.Products\DNCommerce.Framework.BuildingBlocks.Products.csproj" />
+    <ProjectReference Include="..\DNCommerce.Framework.BuildingBlocks.Catalog\DNCommerce.Framework.BuildingBlocks.Catalog.csproj" />
   </ItemGroup>
 
 </Project>

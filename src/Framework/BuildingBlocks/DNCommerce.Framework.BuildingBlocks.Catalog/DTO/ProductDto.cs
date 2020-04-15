@@ -1,4 +1,4 @@
-﻿namespace DNCommerce.Framework.BuildingBlocks.Products.DTO
+﻿namespace DNCommerce.Framework.BuildingBlocks.Catalog.DTO
 {
     public class ProductDto
     {

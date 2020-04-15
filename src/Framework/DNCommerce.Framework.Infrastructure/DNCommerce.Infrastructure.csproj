@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BuildingBlocks\DNCommerce.Framework.BuildingBocks\DNCommerce.Framework.BuildingBocks.csproj" />
     <ProjectReference Include="..\DNCommerce.Framework.Application\DNCommerce.Application.csproj" />
   </ItemGroup>
 

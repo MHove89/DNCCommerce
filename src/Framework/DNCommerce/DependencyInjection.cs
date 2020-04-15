@@ -1,5 +1,5 @@
 ﻿using DNCommerce.Application;
-using DNCommerce.Framework.BuildingBlocks.Products;
+using DNCommerce.Framework.BuildingBlocks;
 using DNCommerce.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,7 +12,7 @@ namespace DNCommerce
         {
             collection.AddInfrastructure(configuration);
             collection.AddApplication();
-            collection.AddBuildingBlocks(configuration);
+            collection.AddBuildingBlocks();
             return collection;
         }
     }

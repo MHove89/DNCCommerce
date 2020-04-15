@@ -1,16 +1,13 @@
-using DNCommerce.Framework.BuildingBlocks.Products.DTO;
-using DNCommerce.Framework.BuildingBlocks.Products.DTO.Contracts;
-using DNCommerce.Framework.BuildingBlocks.Products.Services;
-using Microsoft.Extensions.Configuration;
+using DNCommerce.Framework.BuildingBlocks.Catalog;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DNCommerce.Framework.BuildingBlocks.Products
+namespace DNCommerce.Framework.BuildingBlocks
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddBuildingBlocks(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddBuildingBlocks(this IServiceCollection services)
         {
-            services.AddBuildingBlocksProducts();
+            services.AddBuildingBlocksCatalog();
             return services;
         }
     }
