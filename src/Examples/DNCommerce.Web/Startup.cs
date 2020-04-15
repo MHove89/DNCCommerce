@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using DNCommerce.Application;
 using DNCommerce.Infrastructure;
 using DNCommerce;
+using DNCommerce.Admin.Areas.Admin.Controllers;
 
 namespace DNCommerce.web
 {
