@@ -24,6 +24,7 @@ namespace DNCommerce.Infrastructure
 
             services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
             services.AddScoped<ICurrentUserService, CurrentUserService>();
+
             return services;
         }
     }

@@ -18,12 +18,17 @@ namespace DNCommerce.Infrastructure.Data
             _currentUserService = currentUserService;
         }
 
-        public DbSet<BillingAddress> BillingAddresses { get; set; }
-        public DbSet<DeliveryAddress> DeliveryAddresses { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderLine> OrderLines { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<ProductImage> ProductImages { get; set; }
+        public virtual DbSet<BillingAddress> BillingAddresses { get; set; }
+
+        public virtual DbSet<DeliveryAddress> DeliveryAddresses { get; set; }
+
+        public virtual DbSet<Order> Orders { get; set; }
+
+        public virtual DbSet<OrderLine> OrderLines { get; set; }
+
+        public virtual DbSet<Product> Products { get; set; }
+
+        public virtual DbSet<ProductImage> ProductImages { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {

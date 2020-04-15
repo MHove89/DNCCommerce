@@ -31,5 +31,18 @@ namespace DNCommerce.Framework.BuildingBlocks.Products.Services
             var product = await _productRepository.GetAsync(productId);
             return _productDtoFactory.Create(product);
         }
+
+        public async Task<Guid> AddProduct(ProductDto productDto)
+        {
+            var product = new Product
+            {
+                Title = productDto.Title,
+                Description = productDto.Description,
+                Price = productDto.Price,
+                Feature = productDto.Feature
+            };
+            var productDao = await _productRepository.AddAsync(product);
+            return product.Id;
+        }
     }
 }

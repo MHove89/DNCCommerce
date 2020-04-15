@@ -7,12 +7,12 @@ namespace DNCommerce.Application
 {
     public interface IRepository<TObject> where TObject : class
     {
-        TObject Add(TObject t);
-        Task<TObject> AddAsync(TObject t);
+        TObject Add(TObject dao);
+        Task<TObject> AddAsync(TObject dao);
         int Count();
         Task<int> CountAsync();
-        void Delete(TObject t);
-        Task<int> DeleteAsync(TObject t);
+        void Delete(TObject dao);
+        Task<int> DeleteAsync(TObject dao);
         TObject Find(Expression<Func<TObject, bool>> match);
         ICollection<TObject> FindAll(Expression<Func<TObject, bool>> match);
         Task<ICollection<TObject>> FindAllAsync(Expression<Func<TObject, bool>> match);
@@ -21,7 +21,7 @@ namespace DNCommerce.Application
         ICollection<TObject> GetAll();
         Task<ICollection<TObject>> GetAllAsync();
         Task<TObject> GetAsync(object id);
-        TObject Update(TObject updated, int key);
-        Task<TObject> UpdateAsync(TObject updated, int key);
+        TObject Update(TObject dao, int key);
+        Task<TObject> UpdateAsync(TObject dao, int key);
     }
 }

@@ -59,51 +59,51 @@ namespace DNCommerce.Framework.Infrastructure.Repositories
             return await _context.Set<TObject>().Where(match).ToListAsync();
         }
 
-        public TObject Add(TObject t)
+        public TObject Add(TObject dao)
         {
-            _context.Set<TObject>().Add(t);
+            _context.Set<TObject>().Add(dao);
             _context.SaveChanges();
-            return t;
+            return dao;
         }
 
-        public async Task<TObject> AddAsync(TObject t)
+        public async Task<Guid> AddAsync(TObject dao)
         {
-            _context.Set<TObject>().Add(t);
+            _context.Set<TObject>().Add(dao);
             await _context.SaveChangesAsync();
-            return t;
+            return n ;
         }
 
-        public TObject Update(TObject updated, int key)
+        public TObject Update(TObject dao, int key)
         {
-            if (updated == null)
+            if (dao == null)
                 return null;
 
             TObject existing = _context.Set<TObject>().Find(key);
             if (existing != null)
             {
-                _context.Entry(existing).CurrentValues.SetValues(updated);
+                _context.Entry(existing).CurrentValues.SetValues(dao);
                 _context.SaveChanges();
             }
             return existing;
         }
 
-        public async Task<TObject> UpdateAsync(TObject updated, int key)
+        public async Task<TObject> UpdateAsync(TObject dao, int key)
         {
-            if (updated == null)
+            if (dao == null)
                 return null;
 
             TObject existing = await _context.Set<TObject>().FindAsync(key);
             if (existing != null)
             {
-                _context.Entry(existing).CurrentValues.SetValues(updated);
+                _context.Entry(existing).CurrentValues.SetValues(dao);
                 await _context.SaveChangesAsync();
             }
             return existing;
         }
 
-        public void Delete(TObject t)
+        public void Delete(TObject dao)
         {
-            _context.Set<TObject>().Remove(t);
+            _context.Set<TObject>().Remove(dao);
             _context.SaveChanges();
         }
 

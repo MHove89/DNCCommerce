@@ -9,6 +9,10 @@ namespace DNCommerce.Framework.BuildingBlocks.Products.DTO
         {
             return new ProductDto
             {
+                Title = product.Title,
+                Description = product.Description,
+                Feature = product.Feature,
+                Price = product.Price
             };
         }
     }
