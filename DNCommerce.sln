@@ -19,13 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Domain", "src\Fr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Infrastructure", "src\Framework\DNCommerce.Framework.Infrastructure\DNCommerce.Infrastructure.csproj", "{A45B9F45-74B3-4B1B-83ED-6605FE00A4F6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Examples.Web", "src\Examples\DNCommerce.Web\DNCommerce.Examples.Web.csproj", "{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNCommerce.Framework.BuildingBlocks.Catalog", "src\Framework\BuildingBlocks\DNCommerce.Framework.BuildingBlocks.Catalog\DNCommerce.Framework.BuildingBlocks.Catalog.csproj", "{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin", "Admin", "{51F8F4F6-1E09-455D-87CC-3128C69229D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNCommerce.Admin", "src\Admin\DNCommerce.Admin\DNCommerce.Admin.csproj", "{B08C2ED7-13AE-46B9-9D78-A5585507C546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNCommerce.Examples.Web", "src\Examples\DNCommerce.Examples.Web\DNCommerce.Examples.Web.csproj", "{90F10F54-F41D-4200-B87B-96FB89CD2034}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,6 @@ Global
 		{A45B9F45-74B3-4B1B-83ED-6605FE00A4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A45B9F45-74B3-4B1B-83ED-6605FE00A4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A45B9F45-74B3-4B1B-83ED-6605FE00A4F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,6 +61,10 @@ Global
 		{B08C2ED7-13AE-46B9-9D78-A5585507C546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B08C2ED7-13AE-46B9-9D78-A5585507C546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B08C2ED7-13AE-46B9-9D78-A5585507C546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F10F54-F41D-4200-B87B-96FB89CD2034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F10F54-F41D-4200-B87B-96FB89CD2034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F10F54-F41D-4200-B87B-96FB89CD2034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F10F54-F41D-4200-B87B-96FB89CD2034}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,9 +76,9 @@ Global
 		{88788461-21E9-4D84-83F5-4D0AE2D32EED} = {090C6533-621D-43E1-B5DD-518C61524F15}
 		{2CD10F25-23CF-492E-A6EC-30C4A0525ABD} = {090C6533-621D-43E1-B5DD-518C61524F15}
 		{A45B9F45-74B3-4B1B-83ED-6605FE00A4F6} = {090C6533-621D-43E1-B5DD-518C61524F15}
-		{2DB2CD43-3EAC-418F-9598-36AD5BD29B6E} = {774FEA49-AA37-4A51-A469-F1EE06CE3B8D}
 		{3C3AAB71-7F58-42C2-9FA0-6CE0F9C7C435} = {43790995-7A9F-4153-8036-BE8F89BDAD4D}
 		{B08C2ED7-13AE-46B9-9D78-A5585507C546} = {51F8F4F6-1E09-455D-87CC-3128C69229D4}
+		{90F10F54-F41D-4200-B87B-96FB89CD2034} = {774FEA49-AA37-4A51-A469-F1EE06CE3B8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BAB1E249-DEB4-491D-A129-7671FBCCB607}

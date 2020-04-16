@@ -14,6 +14,7 @@ namespace DNCommerce
             services.AddInfrastructure(configuration);
             services.AddApplication();
             services.AddBuildingBlocks();
+            services.AddMvc();
             services.AddMvc().AddApplicationPart(typeof(AdminController).Assembly).AddControllersAsServices();
             return services;
         }
