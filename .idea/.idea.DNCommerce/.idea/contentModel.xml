@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Z6NLD\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Z6NLD\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_DNCommerce.518181138.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Z6NLD\Documents\privProjs\DNCommerce" t="IncludeFlat">
+      <e p="Admin" t="Include" />
+      <e p="DNCommerce.sln" t="IncludeFlat" />
+      <e p="Examples" t="Include" />
+      <e p="Framework" t="Include">
+        <e p="BuildingBlocks" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src\Admin\DNCommerce.Admin" t="IncludeRecursive">
+        <e p="Areas" t="Include">
+          <e p="Admin" t="Include">
+            <e p="Controllers" t="Include">
+              <e p="AdminController.cs" t="Include" />
+              <e p="ProductController.cs" t="Include" />
+            </e>
+            <e p="Data" t="Include" />
+            <e p="Models" t="Include" />
+            <e p="Views" t="Include">
+              <e p="Admin" t="Include">
+                <e p="Index.cshtml" t="Include" />
+              </e>
+              <e p="Product" t="Include">
+                <e p="Index.cshtml" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DNCommerce.Admin.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="ErrorViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DNCommerce.Admin.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="ScaffoldingReadMe.txt" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Shared" t="Include">
+            <e p="_AdminLayout.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="AdminSsite.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="js" t="Include">
+            <e p="AdminSsite.js" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="src\Examples\DNCommerce.Examples.Web" t="IncludeRecursive">
+        <e p="app.db" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="Areas" t="Include">
+          <e p="Identity" t="Include">
+            <e p="Pages" t="Include">
+              <e p="_ViewStart.cshtml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="HomeController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="ApplicationDbContext.cs" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="00000000000000_CreateIdentitySchema.cs" t="Include" />
+            <e p="00000000000000_CreateIdentitySchema.Designer.cs" t="Include" />
+            <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+          </e>
+        </e>
+        <e p="DNCommerce.Examples.Web.csproj" t="IncludeRecursive" />
+        <e p="Models" t="Include">
+          <e p="ErrorViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DNCommerce.Examples.Web.AssemblyInfo.cs" t="Include" />
+              <e p="DNCommerce.Examples.Web.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Privacy.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_LoginPartial.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="js" t="Include">
+            <e p="site.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-grid.css" t="Include" />
+                  <e p="bootstrap-grid.css.map" t="Include" />
+                  <e p="bootstrap-grid.min.css" t="Include" />
+                  <e p="bootstrap-grid.min.css.map" t="Include" />
+                  <e p="bootstrap-reboot.css" t="Include" />
+                  <e p="bootstrap-reboot.css.map" t="Include" />
+                  <e p="bootstrap-reboot.min.css" t="Include" />
+                  <e p="bootstrap-reboot.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.bundle.js" t="Include" />
+                  <e p="bootstrap.bundle.js.map" t="Include" />
+                  <e p="bootstrap.bundle.min.js" t="Include" />
+                  <e p="bootstrap.bundle.min.js.map" t="Include" />
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.js.map" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="bootstrap.min.js.map" t="Include" />
+                </e>
+              </e>
+              <e p="LICENSE" t="Include" />
+            </e>
+            <e p="jquery" t="Include">
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+              <e p="LICENSE.md" t="Include" />
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="src\Framework\BuildingBlocks\DNCommerce.Framework.BuildingBlocks.Catalog" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DependencyInjection.cs" t="Include" />
+        <e p="DNCommerce.Framework.BuildingBlocks.Catalog.csproj" t="IncludeRecursive" />
+        <e p="DTO" t="Include">
+          <e p="Contracts" t="Include">
+            <e p="IProductDtoFactory.cs" t="Include" />
+          </e>
+          <e p="CreateProductDto.cs" t="Include" />
+          <e p="ProductDto.cs" t="Include" />
+          <e p="ProductDtoFactory.cs" t="Include" />
+          <e p="ProductListDto.cs" t="Include" />
+          <e p="UpdateProductDto.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DNCommerce.Framework.BuildingBlocks.Catalog.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="Contracts" t="Include">
+            <e p="IProductService.cs" t="Include" />
+          </e>
+          <e p="ProductService.cs" t="Include" />
+        </e>
+      </e>
+      <e p="src\Framework\BuildingBlocks\DNCommerce.Framework.BuildingBocks" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DependencyInjection.cs" t="Include" />
+        <e p="DNCommerce.Framework.BuildingBocks.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DNCommerce.Framework.BuildingBocks.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="src\Framework\DNCommerce" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DependencyInjection.cs" t="Include" />
+        <e p="DNCommerce.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DNCommerce.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="src\Framework\DNCommerce.Framework.Application" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DependencyInjection.cs" t="Include" />
+        <e p="DNCommerce.Application.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DNCommerce.Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="IProductRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="ICurrentUserService.cs" t="Include" />
+        </e>
+      </e>
+      <e p="src\Framework\DNCommerce.Framework.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DNCommerce.Domain.csproj" t="IncludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="Address.cs" t="Include" />
+          <e p="BaseEntitiy.cs" t="Include" />
+          <e p="BillingAddress.cs" t="Include" />
+          <e p="Category.cs" t="Include" />
+          <e p="DeliveryAddress.cs" t="Include" />
+          <e p="Image.cs" t="Include" />
+          <e p="Order.cs" t="Include" />
+          <e p="OrderLine.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="ProductCategory.cs" t="Include" />
+          <e p="ProductImage.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DNCommerce.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="src\Framework\DNCommerce.Framework.Infrastructure" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Data" t="Include">
+          <e p="ApplicationDbContext.cs" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="00000000000000_CreateIdentitySchema.cs" t="Include" />
+            <e p="00000000000000_CreateIdentitySchema.Designer.cs" t="Include" />
+            <e p="20200410200458_InitialCreate.cs" t="Include" />
+            <e p="20200410200458_InitialCreate.Designer.cs" t="Include" />
+            <e p="20200411091437_CommerceEntitiesInitial.cs" t="Include" />
+            <e p="20200411091437_CommerceEntitiesInitial.Designer.cs" t="Include" />
+            <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+            <e p="ApplicationDbContextSeed.cs" t="Include" />
+          </e>
+        </e>
+        <e p="DependencyInjection.cs" t="Include" />
+        <e p="DNCommerce.Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="DNCommerce.Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="ProductRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="CurrentUserService.cs" t="Include" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>
