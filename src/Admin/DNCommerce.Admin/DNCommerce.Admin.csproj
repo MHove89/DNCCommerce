@@ -9,4 +9,8 @@
 <ItemGroup>
   <Folder Include="Areas\Admin\Views\Admin\" />
 </ItemGroup>
+<ItemGroup>
+  <ProjectReference Include="..\..\Framework\DNCommerce.Framework.Application\DNCommerce.Application.csproj" />
+  <ProjectReference Include="..\..\Framework\BuildingBlocks\DNCommerce.Framework.BuildingBlocks.Catalog\DNCommerce.Framework.BuildingBlocks.Catalog.csproj" />
+</ItemGroup>
 </Project>

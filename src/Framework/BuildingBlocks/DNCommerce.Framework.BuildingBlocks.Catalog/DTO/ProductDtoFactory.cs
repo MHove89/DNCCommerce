@@ -32,5 +32,10 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.DTO
                 ProductDtos = productDtos
             };
         }
+
+        public UpdateProductDto UpdateProductDto(string title, string description, string feature, int price)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

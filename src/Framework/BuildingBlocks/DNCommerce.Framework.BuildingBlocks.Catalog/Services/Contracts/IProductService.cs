@@ -6,7 +6,7 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.Services
     public interface IProductService
     {
         Task<ProductListDto> GetAllProductsAsync();
-        Task InserProduct(InsertProductDto insertProductDto);
-        Task UpdateProduct(UpdateProductDto updateProductDto);
+        Task InsertProductAsync(InsertProductDto insertProductDto);
+        Task UpdateProductAsync(UpdateProductDto updateProductDto);
     }
 }

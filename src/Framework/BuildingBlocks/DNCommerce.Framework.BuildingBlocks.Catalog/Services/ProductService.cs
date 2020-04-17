@@ -17,7 +17,7 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.Services
             _productRepository = productRepository;
         }
 
-        public async Task InserProduct(InsertProductDto insertProductDto)
+        public async Task InsertProductAsync(InsertProductDto insertProductDto)
         {
             var product = new Product()
             {
@@ -37,7 +37,7 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.Services
             return productListDto;
         }
 
-        public async Task UpdateProduct(UpdateProductDto updateProductDto)
+        public async Task UpdateProductAsync(UpdateProductDto updateProductDto)
         {
             var product = await _productRepository.FindAsync(updateProductDto.Id);
 
