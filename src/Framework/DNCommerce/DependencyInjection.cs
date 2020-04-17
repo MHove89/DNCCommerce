@@ -1,5 +1,4 @@
-﻿using DNCommerce.Admin.Areas.Admin.Controllers;
-using DNCommerce.Application;
+﻿using DNCommerce.Application;
 using DNCommerce.Framework.BuildingBlocks;
 using DNCommerce.Infrastructure;
 using Microsoft.Extensions.Configuration;
@@ -14,8 +13,8 @@ namespace DNCommerce
             services.AddInfrastructure(configuration);
             services.AddApplication();
             services.AddBuildingBlocks();
-            services.AddMvc();
-            services.AddMvc().AddApplicationPart(typeof(AdminController).Assembly).AddControllersAsServices();
+            services.AddControllersWithViews().AddApplicationPart(typeof(DNCommerce.Admin.Areas.Admin.Controllers.HomeController).Assembly);
+            services.AddRazorPages();
             return services;
         }
     }

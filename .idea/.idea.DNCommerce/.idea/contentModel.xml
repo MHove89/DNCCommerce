@@ -18,8 +18,6 @@
               <e p="AdminController.cs" t="Include" />
               <e p="ProductController.cs" t="Include" />
             </e>
-            <e p="Data" t="Include" />
-            <e p="Models" t="Include" />
             <e p="Views" t="Include">
               <e p="Admin" t="Include">
                 <e p="Index.cshtml" t="Include" />
@@ -39,6 +37,7 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
               <e p="DNCommerce.Admin.AssemblyInfo.cs" t="Include" />
+              <e p="DNCommerce.Admin.RazorAssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>
