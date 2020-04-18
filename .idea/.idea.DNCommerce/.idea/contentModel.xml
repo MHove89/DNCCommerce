@@ -257,7 +257,7 @@
         <e p="DNCommerce.Domain.csproj" t="IncludeRecursive" />
         <e p="Entities" t="Include">
           <e p="Address.cs" t="Include" />
-          <e p="BaseEntitiy.cs" t="Include" />
+          <e p="BaseEntity.cs" t="Include" />
           <e p="BillingAddress.cs" t="Include" />
           <e p="Category.cs" t="Include" />
           <e p="DeliveryAddress.cs" t="Include" />

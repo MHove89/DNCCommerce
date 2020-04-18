@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DNCommerce.Domain.Entities
 {
-    public class Product : BaseEntitiy
+    public class Product : BaseEntity
     {
      
         private ICollection<ProductCategory> _productCategories;

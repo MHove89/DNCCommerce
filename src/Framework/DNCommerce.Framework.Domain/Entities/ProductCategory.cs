@@ -2,7 +2,7 @@ using System;
 
 namespace DNCommerce.Domain.Entities
 {
-    public class ProductCategory : BaseEntitiy
+    public class ProductCategory : BaseEntity
     {
         public Guid Id { get; set; }
         

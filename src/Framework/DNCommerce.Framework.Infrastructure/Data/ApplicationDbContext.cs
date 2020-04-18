@@ -5,6 +5,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System;
 using DNCommerce.Framework.Application.Services;
+using System.Reflection;
+using System.Linq;
+using DNCommerce.Framework.Infrastructure.Data.Mappings;
 
 namespace DNCommerce.Infrastructure.Data
 {
@@ -32,7 +35,7 @@ namespace DNCommerce.Infrastructure.Data
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
-            foreach (var entry in ChangeTracker.Entries<BaseEntitiy>())
+            foreach (var entry in ChangeTracker.Entries<BaseEntity>())
             {
                 switch (entry.State)
                 {
@@ -48,6 +51,22 @@ namespace DNCommerce.Infrastructure.Data
             }
 
             return base.SaveChangesAsync(cancellationToken);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            var typeConfigurations = Assembly.GetExecutingAssembly().GetTypes().Where(type =>
+                (type.BaseType?.IsGenericType ?? false)
+                    && (type.BaseType.GetGenericTypeDefinition() == typeof(EntityMapConfiguration<>)
+                        || type.BaseType.GetGenericTypeDefinition() == typeof(EntityMapConfiguration<>)));
+
+            foreach (var typeConfiguration in typeConfigurations)
+            {
+                var configuration = (IEntityMapConfiguration)Activator.CreateInstance(typeConfiguration);
+                configuration.ApplyConfiguration(modelBuilder);
+            }
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace DNCommerce.Domain.Entities
 {
-    public abstract class BaseEntitiy
+    public abstract class BaseEntity
     {
         public string CreatedBy { get; set; }
 

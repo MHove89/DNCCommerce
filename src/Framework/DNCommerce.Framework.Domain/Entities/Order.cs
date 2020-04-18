@@ -2,7 +2,7 @@
 
 namespace DNCommerce.Domain.Entities
 {
-    public class Order : BaseEntitiy
+    public class Order : BaseEntity
     {
         public Guid Id { get; set; }
       

@@ -1,7 +1,7 @@
 ﻿using System;
 namespace DNCommerce.Domain.Entities
 {
-    public class OrderLine : BaseEntitiy
+    public class OrderLine : BaseEntity
     {
         public Guid Id { get; set; }
         
