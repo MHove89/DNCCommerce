@@ -1,5 +1,7 @@
 ﻿using DNCommerce.Application.Repositories;
 using DNCommerce.Domain.Entities;
+using DNCommerce.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -8,24 +10,53 @@ namespace DNCommerce.Infrastructure.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        public Task<Product> FindAsync(Guid guid)
+        private readonly ApplicationDbContext _context;
+
+        public ProductRepository(ApplicationDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task<IList<Product>> GetAll()
+        public async Task<Product> FindAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await _context.Products.FindAsync(id);
         }
 
-        public Task InsertProductAsync(Product product)
+        public async Task<IList<Product>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _context.Products.ToListAsync();
         }
 
-        public Task UpdateAsync(Product product)
+        public async Task InsertProductAsync(Product product)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _context.Products.AddAsync(product);
+                await _context.SaveChangesAsync();
+            }
+            catch (System.Exception)
+            {
+                // TODO : Create nice exceptions
+                throw;
+            }
+        }
+
+        public async Task UpdateAsync(Product product)
+        {
+            try
+            {
+                var dao = await _context.Products.FindAsync(product.Id);
+                dao.Title = product.Title;
+                dao.Description = product.Description;
+                dao.Feature = product.Feature;
+                dao.Price = product.Price;
+
+                await _context.SaveChangesAsync();
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
         }
     }
 }
