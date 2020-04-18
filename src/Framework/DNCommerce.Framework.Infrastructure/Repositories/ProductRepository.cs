@@ -1,5 +1,6 @@
 ﻿using DNCommerce.Application.Repositories;
 using DNCommerce.Domain.Entities;
+using DNCommerce.Framework.Infrastructure.Repositories;
 using DNCommerce.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -8,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DNCommerce.Infrastructure.Repositories
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository : BaseRepo, IProductRepository
     {
         private readonly ApplicationDbContext _context;
 
-        public ProductRepository(ApplicationDbContext context)
+        public ProductRepository(ApplicationDbContext context) : base(context)
         {
             _context = context;
         }
@@ -29,15 +30,18 @@ namespace DNCommerce.Infrastructure.Repositories
 
         public async Task InsertProductAsync(Product product)
         {
+
+            if (product == null)
+                throw new ArgumentNullException(nameof(product));
+
             try
             {
                 await _context.Products.AddAsync(product);
                 await _context.SaveChangesAsync();
             }
-            catch (System.Exception)
+            catch (DbUpdateException ex)
             {
-                // TODO : Create nice exceptions
-                throw;
+                throw new Exception(GetFullErrorTextAndRollbackEntityChanges(ex));
             }
         }
 
@@ -53,9 +57,9 @@ namespace DNCommerce.Infrastructure.Repositories
 
                 await _context.SaveChangesAsync();
             }
-            catch (System.Exception)
+            catch (DbUpdateException ex)
             {
-                throw;
+                throw new Exception(GetFullErrorTextAndRollbackEntityChanges(ex));
             }
         }
     }
