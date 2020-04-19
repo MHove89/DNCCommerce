@@ -2,7 +2,7 @@ using DNCommerce.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DNCommerce.Framework.Infrastructure.Data.Mappings.Products
+namespace DNCommerce.Framework.Infrastructure.Data.Mappings.Catalog
 {
     public partial class AddressMap : EntityMapConfiguration<Product>
     {
@@ -10,6 +10,7 @@ namespace DNCommerce.Framework.Infrastructure.Data.Mappings.Products
         {
             builder.ToTable(nameof(Product));
             builder.HasKey(product => product.Id);
+            
             builder.Property(product => product.Name).IsRequired();
             builder.Property(product => product.Feature).HasMaxLength(400);
             builder.Property(product => product.Description).IsRequired();

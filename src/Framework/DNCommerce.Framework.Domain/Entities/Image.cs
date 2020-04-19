@@ -2,7 +2,7 @@
 
 namespace DNCommerce.Domain.Entities
 {
-    public abstract class Image : BaseEntity
+    public  class Image : BaseEntity
     {
         public Guid Id { get; set; }
 
