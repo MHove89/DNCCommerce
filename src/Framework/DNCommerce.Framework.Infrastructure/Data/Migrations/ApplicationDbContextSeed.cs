@@ -15,14 +15,14 @@ namespace DNCommerce.Infrastructure.Data.Migrations
             {
                 context.Products.AddRange(new List<Product>
                 {
-                      new Product { Title = "Apples", Description ="this description is very cool" },
-                        new Product { Title = "Milk",  Description ="this description is very cool" },
-                        new Product { Title = "Bread",  Description ="this description is very cool"},
-                        new Product { Title = "Toilet paper" , Description ="this description is very cool"},
-                        new Product { Title = "Pasta", Description ="this description is very cool" },
-                        new Product { Title = "Tissues" , Description ="this description is very cool"},
-                        new Product { Title = "Tuna", Description ="this description is very cool" },
-                        new Product { Title = "Water", Description ="this description is very cool" }
+                      new Product { Name = "Apples", Description ="this description is very cool" },
+                        new Product { Name = "Milk",  Description ="this description is very cool" },
+                        new Product { Name = "Bread",  Description ="this description is very cool"},
+                        new Product { Name = "Toilet paper" , Description ="this description is very cool"},
+                        new Product { Name = "Pasta", Description ="this description is very cool" },
+                        new Product { Name = "Tissues" , Description ="this description is very cool"},
+                        new Product { Name = "Tuna", Description ="this description is very cool" },
+                        new Product { Name = "Water", Description ="this description is very cool" }
                 });
             }
 

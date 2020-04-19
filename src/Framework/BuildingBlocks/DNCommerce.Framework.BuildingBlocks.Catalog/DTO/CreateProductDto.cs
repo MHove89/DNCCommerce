@@ -2,7 +2,7 @@
 {
     public class InsertProductDto
     {
-        public string Title { get; set; }
+        public string Name { get; set; }
 
         public string Feature { get; set; }
 

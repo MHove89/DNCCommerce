@@ -21,7 +21,7 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.Services
         {
             var product = new Product()
             {
-                Title = insertProductDto.Title,
+                Name = insertProductDto.Name,
                 Description = insertProductDto.Description,
                 Feature = insertProductDto.Feature,
                 Price = insertProductDto.Price,
@@ -41,7 +41,7 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.Services
         {
             var product = await _productRepository.FindAsync(updateProductDto.Id);
 
-            product.Title = updateProductDto.Title;
+            product.Name = updateProductDto.Name;
             product.Feature = updateProductDto.Feature;
             product.Description = updateProductDto.Description;
             product.Price = updateProductDto.Price;

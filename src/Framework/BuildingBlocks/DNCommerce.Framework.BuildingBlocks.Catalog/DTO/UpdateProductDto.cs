@@ -6,7 +6,7 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.DTO
     {
         public Guid Id { get; set; }
 
-        public string Title { get; set; }
+        public string Name { get; set; }
 
         public string Feature { get; set; }
 

@@ -12,11 +12,11 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.DTO
             throw new System.NotImplementedException();
         }
 
-        public InsertProductDto InsertProductDto(string title, string description, string feature, int price)
+        public InsertProductDto InsertProductDto(string name, string description, string feature, int price)
         {
             return new InsertProductDto
             {
-                Title = title,
+                Name = name,
                 Description = description,
                 Feature = feature,
                 Price = price

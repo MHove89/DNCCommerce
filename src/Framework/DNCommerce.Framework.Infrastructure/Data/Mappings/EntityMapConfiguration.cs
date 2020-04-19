@@ -4,7 +4,7 @@ using DNCommerce.Domain.Entities;
 
 namespace DNCommerce.Framework.Infrastructure.Data.Mappings
 {
-    public class EntityMapConfiguration<TEntity> : IEntityMapConfiguration, IEntityTypeConfiguration<TEntity> where TEntity : BaseEntity
+    public partial class EntityMapConfiguration<TEntity> : IEntityMapConfiguration, IEntityTypeConfiguration<TEntity> where TEntity : BaseEntity
     {
         public virtual void Configure(EntityTypeBuilder<TEntity> builder)
         {

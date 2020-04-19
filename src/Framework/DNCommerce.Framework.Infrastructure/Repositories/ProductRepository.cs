@@ -50,7 +50,7 @@ namespace DNCommerce.Infrastructure.Repositories
             try
             {
                 var dao = await _context.Products.FindAsync(product.Id);
-                dao.Title = product.Title;
+                dao.Name = product.Name;
                 dao.Description = product.Description;
                 dao.Feature = product.Feature;
                 dao.Price = product.Price;
