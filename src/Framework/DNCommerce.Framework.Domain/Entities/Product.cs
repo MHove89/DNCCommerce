@@ -24,7 +24,7 @@ namespace DNCommerce.Domain.Entities
 
         public int Weight { get; set; }
 
-        public int QuantityInStock { get; set;}
+        public int QuantityInStock { get; set; }
 
         public virtual ICollection<ProductCategory> ProductCategories
         {
