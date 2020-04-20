@@ -1,5 +1,6 @@
 using DNCommerce.Domain.Entities;
 using DNCommerce.Framework.BuildingBlocks.Catalog.DTO.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,17 +10,27 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.DTO
     {
         public ProductDto ProductDto(Product product)
         {
-            throw new System.NotImplementedException();
+            return new ProductDto
+            {
+                Name = product.Name,
+                Feature = product.Feature,
+                Description = product.Description,
+                Price = product.Price,
+                QuantityInStock = product.QuantityInStock,
+                Weight = product.Weight
+            };
         }
 
-        public InsertProductDto InsertProductDto(string name, string description, string feature, int price)
+        public InsertProductDto InsertProductDto(string name, string feature, string description, int price, int quantityInStock, int weight)
         {
             return new InsertProductDto
             {
                 Name = name,
-                Description = description,
                 Feature = feature,
-                Price = price
+                Description = description,
+                Price = price,
+                QuantityInStock = quantityInStock,
+                Weight = weight
             };
         }
 
@@ -33,9 +44,18 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.DTO
             };
         }
 
-        public UpdateProductDto UpdateProductDto(string title, string description, string feature, int price)
+        public UpdateProductDto UpdateProductDto(Guid id, string name, string feature, string description, int price, int quantityInStock, int weight)
         {
-            throw new System.NotImplementedException();
+            return new UpdateProductDto
+            {
+                Id = id,
+                Name = name,
+                Feature = feature,
+                Description = description,
+                Price = price,
+                QuantityInStock = quantityInStock,
+                Weight = weight
+            };
         }
     }
 }

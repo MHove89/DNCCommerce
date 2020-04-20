@@ -25,6 +25,8 @@ namespace DNCommerce.Framework.BuildingBlocks.Catalog.Services
                 Description = insertProductDto.Description,
                 Feature = insertProductDto.Feature,
                 Price = insertProductDto.Price,
+                QuantityInStock = insertProductDto.QuantityInStock,
+                Weight = insertProductDto.Weight
             };
 
             await _productRepository.InsertProductAsync(product);

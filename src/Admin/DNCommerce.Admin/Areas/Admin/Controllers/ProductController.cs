@@ -34,7 +34,7 @@ namespace DNCommerce.Admin.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Insert(InsertProductViewModel model)
         {
-            var productDto = _productDtoFactory.InsertProductDto(model.Title, model.Description, model.Feature, model.Price);
+            var productDto = _productDtoFactory.InsertProductDto(model.Title, model.Description, model.Feature, model.Price, model.QuantityInStock, model.Weight);
             await _productService.InsertProductAsync(productDto);
             return View();
         }
@@ -47,9 +47,9 @@ namespace DNCommerce.Admin.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(InsertProductViewModel model)
+        public async Task<IActionResult> Update(UpdateProductViewModel model)
         {
-            var productDto = _productDtoFactory.UpdateProductDto(model.Title, model.Description, model.Feature, model.Price);
+            var productDto = _productDtoFactory.UpdateProductDto(model.Id, model.Title, model.Description, model.Feature, model.Price, model.QuantityInStock, model.Weight);
             await _productService.UpdateProductAsync(productDto);
             return View();
         }
