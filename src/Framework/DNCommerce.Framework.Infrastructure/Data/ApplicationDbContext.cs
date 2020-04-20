@@ -21,9 +21,7 @@ namespace DNCommerce.Infrastructure.Data
             _currentUserService = currentUserService;
         }
 
-        public virtual DbSet<BillingAddress> BillingAddresses { get; set; }
-
-        public virtual DbSet<DeliveryAddress> DeliveryAddresses { get; set; }
+        public virtual DbSet<Address> Address { get; set; }
 
         public virtual DbSet<Order> Orders { get; set; }
 

@@ -26,7 +26,11 @@ namespace DNCommerce.Domain.Entities
 
         public Guid BillingAddressId { get; set; }
 
-        public BillingAddress BillingAddress { get; set; }
+        public Address BillingAddress { get; set; }
+
+        public Guid DeliveryAddressId { get; set; }
+
+        public Address DeliveryAddress { get; set; }
 
         public ICollection<OrderLine> OrderLines
         {

@@ -21,6 +21,12 @@ namespace DNCommerce.Framework.Infrastructure.Data.Mappings.Orders
             builder.HasOne(order => order.BillingAddress)
                           .WithMany()
                           .HasForeignKey(order => order.BillingAddressId)
+                          .IsRequired()
+                          .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(order => order.DeliveryAddress)
+                          .WithMany()
+                          .HasForeignKey(order => order.DeliveryAddressId)
                           .IsRequired();
 
             base.Configure(builder);

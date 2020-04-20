@@ -10,6 +10,7 @@ namespace DNCommerce.Framework.Infrastructure.Data.Mappings.Catalog
         {
             builder.ToTable(nameof(ProductCategory));
 
+            builder.HasKey(productCategory => productCategory.Id);
             builder.HasOne(productCategory => productCategory.Category)
                 .WithMany()
                 .HasForeignKey(productCategory => productCategory.CategoryId)
